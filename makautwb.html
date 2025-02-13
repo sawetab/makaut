@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination System</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            max-width: 300px; /* Adjust as needed */
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .search-box input[type="text"],
+        .search-box select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .search-box button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background-color: #45a049;
+        }
+
+        .search-box .secondary-btn {
+            background-color: #f2f2f2; /* Light gray */
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+        .search-box .secondary-btn:hover {
+            background-color: #e6e6e6;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://images.shiksha.com/mediadata/images/articles/1661339417phpsZb9hC.jpeg"University Logo">  <h1>Maulana Abul Kalam Azad University of Technology, West Bengal</h1>
+        <h2>Examination System</h2>
+    </div>
+
+    <div class="container">
+        <div class="search-box">
+            <h3>Search Your Result</h3>
+            <label for="rollno">Roll No:</label>
+            <input type="text" id="rollno" name="rollno">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select>
+            <button onclick=" document.location='makaut,.html'">Search Result</button>
+            <button class="secondary-btn">Search Provisional</button>
+            <button class="secondary-btn">Reset</button>
+        </div>
+
+        <div class="results">
+            </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Maulana Abul Kalam Azad University of Technology</p>
+    </div>
+
+</body>
+</html>
